@@ -1,0 +1,12 @@
+# dsh-qq-persona 的装配补丁（由 dsh plugin add 之后由 dsh.profile.bundles 引入）
+#
+# ⚠️ 禁止对同一插件文件二次 insert：同一插件双实例注册 = 冲突崩溃循环。
+# ⚠️ 这里的 config 是默认值；要覆盖请在 profile 的 cordis.patch.yml 顶层写同 id 的行。
+- insert:
+    - id: dsh-qq-persona
+      name: dsh-qq-persona
+      config:
+        masterQQ: ''   # 必填：装好后在 profile 里填你自己的 QQ 号
+        botName: 鲸鲸
+        masterScore: 100
+        globalMax: 80

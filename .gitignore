@@ -1,0 +1,11 @@
+node_modules/
+*.log
+*.bak-*
+*.tmp
+
+# 本地数据（永远不要提交：里面是真实 QQ 号和聊天印象）
+data/
+*.jsonl
+people.json
+mood.json
+state.json
